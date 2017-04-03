@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Yeqing's Blog</title>
+	</head>
+	
+	<body>
+	<h1>Recent Blogs</h1>
+	
+	
+	{% for b in blogs %}
+		<hr>
+		<div class="blog">
+			<div class="blog-title"> {{b.title}}</div>
+			<pre class="blog-body">{{b.blog}}</pre>
+		</div>
+	{% endfor %}
+	
+	
+	</body>
+</html>
